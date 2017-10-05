@@ -1,0 +1,11 @@
+public class ComplexMatrix extends GenericMatrix<Complex>{
+
+    Complex[][]matrix;
+    
+    public ComplexMatrix(){
+	
+    }
+
+    public E add(
+    
+}

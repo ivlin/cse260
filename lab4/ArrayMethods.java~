@@ -1,0 +1,29 @@
+public class ArrayMethods {
+
+    public static void main(String[]args){
+	ArrayList<String> a = new ArrayList<>();
+	a.push("A first");
+	a.push("Z last");
+	a.push("Y third");
+	a.push("C second");
+	System.out.println(a);
+    }
+    
+    public static <E extends Comparable<E>> void sort(ArrayList<E> list){
+	E temp, minInd;
+	for (int partition=0; partition<list.size(); partition++){
+	    minInd = partition;
+	    for (int i=partition; i<list.size(); i++){
+		if (list.get(partition).compareTo(list.get(i)) > 0){
+		    minInd = i;
+		}
+	    }
+	    temp = list.get(minInd);
+	    list.set(minInd, list.get(partition));
+	    list.set(partition, temp);
+	}
+    }
+
+
+    
+}

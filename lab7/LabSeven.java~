@@ -1,0 +1,26 @@
+import java.util.*;
+public class LabSeven{
+
+  public static void main(String[]args){
+    timeLinkedListIteration();
+  }
+  
+  public static long timeLinkedListIteration(){
+    LinkedList<Double> doubles = new LinkedList<>();
+    for (double i=0; i<50000; i++){
+      doubles.add(i);
+    }
+    Iterator i = doubles.iterator();
+    long timeNow = System.currentTimeMillis();
+    while (i.hasNext()){
+      i.next();
+    }
+    System.out.println("Time total with iterator: " + System.currentTimeMillis()-timeNow);
+    timeNow = System.currentTimeMillis();
+    i.getIndex(i.size());
+    System.out.println("Time total with iterator: " + System.currentTimeMillis()-timeNow);
+  }
+
+  
+  
+}

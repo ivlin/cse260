@@ -1,0 +1,15 @@
+import java.util.Stack;
+public class TowersOfHanoi{
+    
+    public static void main(String[]args){
+	
+    }
+    //moves disks from a to c
+    public void moveDisks(int disks, Stack<Integer> a, Stack<Integer> b, Stack<Integer> c){
+	
+    }
+
+    public void printTowers(Stack<?> a, Stack<?> b, Stack<?> c){
+
+    }
+}

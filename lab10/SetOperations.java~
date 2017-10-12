@@ -1,0 +1,27 @@
+import java.util.HashSet;
+public class SetOperations{
+
+    public static void main(String[]args){
+	HashSet<String> one = new HashSet<>({"George","Jim","John","Blake","Kevin","Michael"});
+	HashSet<String> two = new HashSet<>({"George","Katie","Kevin","Michelle","Ryan"});
+	SetOperations.printIntersection(one.clone(), two.clone());
+    }
+
+    public static void printIntersection(Set<String> a, Set<String> b){
+	Iterator<String> i = a.iterator();
+	String cur;
+	while (cur = i.next()){
+	    if (b.contains(cur)){
+		System.out.println(cur);
+	    }
+	}
+    }
+
+    public static void printDifference(Set a, Set b){
+
+    }
+    
+    public static void printUnion(Set a, Set b){
+
+    }
+}

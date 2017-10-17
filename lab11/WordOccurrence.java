@@ -8,7 +8,7 @@ public class WordOccurrence implements Comparable<WordOccurrence>{
     public static void main(String[]args) throws IOException{
 	File f = new File(args[0]);
 	Scanner sc = new Scanner(f);
-	sc.useDelimiter("\\s*|\\n|\"|.|,|:|;| ? |(|)");
+	sc.useDelimiter("\\s*|\"|.|,|:|;| ? |(|)");
 	
 	ArrayList<WordOccurrence> oc = new ArrayList<>();
 	boolean present;
